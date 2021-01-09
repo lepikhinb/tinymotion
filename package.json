@@ -1,6 +1,6 @@
 {
   "name": "tinymotion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/tinymotion.umd.js",
   "module": "dist/tinymotion.esm.js",

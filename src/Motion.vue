@@ -121,7 +121,6 @@ export default {
     },
 
     beforeDestroy() {
-        console.log("before");
         this.animators.forEach((animator) => {
             animator.destroyListeners();
         });
