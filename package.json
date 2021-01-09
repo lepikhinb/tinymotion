@@ -15,6 +15,14 @@
   "files": [
     "dist"
   ],
+  "tags": [
+    "vue",
+    "animation",
+    "tailwind",
+    "tailwindcss",
+    "motion",
+    "framer"
+  ],
   "engines": {
     "node": ">=10"
   },
