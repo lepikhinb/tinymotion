@@ -1,4 +1,5 @@
 import component from './Motion.vue';
+import Animator from './animator';
 
 export function install(Vue) {
     if (install.installed) return;
@@ -21,3 +22,4 @@ if (GlobalVue) {
 }
 
 export default component;
+export { Animator };
