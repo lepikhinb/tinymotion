@@ -38,9 +38,11 @@ class Animator {
 
         else if (this.action === 'click') {
             this.el.addEventListener('mousedown', () => this.start(true))
+            this.el.addEventListener('touchstart', () => this.start(true))
 
             if (this.options.rollback) {
                 this.el.addEventListener('mouseup', () => this.stop(true))
+                this.el.addEventListener('touchend', () => this.stop(true))
             }
         }
 
@@ -54,6 +56,8 @@ class Animator {
         this.el.removeEventListener('mouseleave', this.stop)
         this.el.removeEventListener('mousedown', this.start)
         this.el.removeEventListener('mouseup', this.stop)
+        this.el.removeEventListener('touchstart', this.start)
+        this.el.removeEventListener('touchend', this.stop)
     }
 
     parseProperty(property) {
